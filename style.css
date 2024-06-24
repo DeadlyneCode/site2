@@ -42,10 +42,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajustez la hauteur selon vos besoins */
+    height: 100vh;
     max-width: 100%;
     max-height: 100%;
-
 }
 
 h1 {
@@ -58,15 +57,18 @@ h1 {
     justify-content: center;
     gap: 10px;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .gallery-item {
     width: calc(33.333% - 10px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    background-color: #fff;
+    background-color: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .credit {
@@ -78,9 +80,12 @@ h1 {
     box-sizing: border-box;
 }
 
-.gallery-item img {
-    width: 100%;
+.gallery-item img, .gallery-item iframe {
+    width: 50%;
+    max-width: 50%;
     display: block;
+    height: auto;
+    min-height: 100px; /* Vous pouvez ajuster la hauteur minimale selon vos besoins */
 }
 
 @media (max-width: 768px) {
