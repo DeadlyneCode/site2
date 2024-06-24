@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Afficher l'image et masquer le formulaire
             imageAndText.style.display = 'block';
             section.style.display = 'none';
+            localStorage.setItem('enigme3', 'completed');
         } else {
             alert('Code incorrect. Réessayez.');
         }

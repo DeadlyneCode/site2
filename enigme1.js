@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const morseAnswer = document.getElementById('morseInput').value.trim();
         if (morseAnswer === 'yo soy luigi mamamia') { // La réponse correcte pour l'exemple de morse "... --- ..."
             window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Lien vers la vidéo YouTube
+            localStorage.setItem('enigme1', 'completed');
         } else {
             alert('Réponse incorrecte. Réessayez.');
         }

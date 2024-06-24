@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const code = document.getElementById('codeInput').value.trim();
         if (code === '1234') { // Exemple de code correct
             window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'; // Lien vers la vidéo YouTube
+            localStorage.setItem('enigme2', 'completed');
         } else {
             alert('Code incorrect. Réessayez.');
         }
