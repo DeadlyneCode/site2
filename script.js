@@ -1,7 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const secretButton = document.getElementById('secretButton');
+    const code = '1234'; // Code secret
+
+    secretButton.addEventListener('click', () => {
+        const userCode = prompt('Entrez le code secret :');
+        
+        if (userCode === code) {
+            // Redirection vers la page secrète ou autre action
+            alert('Code correct ! Vous avez accès au contenu secret.');
+            // Exemple de redirection vers une autre page
+            window.location.href = 'gallery.html';
+        } else {
+            alert('Code incorrect. Réessayez.');
+        }
+    });
+
+    // Exemple de monologue initial avec animation de texte
     const monologueText = [
         "Salut !",
-        "Bah déjà, joyeux anniversaire ! Maintenant, tu es officiellemen The Papy Show.",
+        "Bah déjà, joyeux anniversaire ! Maintenant, tu es officiellement The Papy Show.",
         "Alors, voici ton cadeau.",
         ". . .",
         "Bah quoi, tu te rends compte du temps que ça prend de faire un site ?",
@@ -14,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "j'ai préparé quelque chose d'unique pour toi.",
         "Pour découvrir ces musiques, tu devras résoudre des énigmes.",
         "Es-tu prêt ?",
-        "Je suis sûr que tu y arriveras, et j'espere tu apprécieras chaque instant de cette expérience.",
+        "Je suis sûr que tu y arriveras, et j'espère que tu apprécieras chaque instant de cette expérience.",
         "Alors, bon courage, et encore une fois, joyeux anniversaire !"
-    
     ];
+
     let currentTextIndex = 0;
     const monologueElement = document.getElementById('monologue-text');
 
@@ -44,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.addEventListener('keydown', (event) => {
         if (event.code === 'Space') {
-            monologueElement.innerHTML = '';  // Clear current text
+            monologueElement.innerHTML = '';  // Effacer le texte actuel
             displayNextText();
         }
     });
