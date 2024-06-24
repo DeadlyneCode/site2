@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
     const secretButton = document.getElementById('secretButton');
-    const code = '1234'; // Code secret
+    const code = '42'; // Code secret
 
     secretButton.addEventListener('click', () => {
-        const userCode = prompt('Entrez le code secret :');
+        const userCode = prompt('Entrez le code caché dans une des questions:');
         
         if (userCode === code) {
             // Redirection vers la page secrète ou autre action
