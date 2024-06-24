@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Énigme 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="section active">
+        <h1>Énigme 1</h1>
+        <p>Le premier chiffre est le nombre d'amis que tu as.</p>
+        <input type="number" id="input1">
+        <p>Le deuxième chiffre est...</p>
+        <input type="number" id="input2">
+        <p>Le troisième chiffre est...</p>
+        <input type="number" id="input3">
+        <p>Le quatrième chiffre est...</p>
+        <input type="number" id="input4">
+        <button id="checkAnswers">Vérifier les réponses</button>
+        <div id="result" style="display:none;">
+            <h2>Résolvez l'énigme suivante :</h2>
+            <p>Traduisez ce message en morse : -.-- --- / ... --- -.-- / .-.. ..- .. --. .. / -- .- -- .- -- .. .-</p>
+            <input type="text" id="morseInput">
+            <button id="checkMorse">Vérifier le morse</button>
+        </div>
+    </div>
+    <script src="enigme1.js"></script>
+</body>
+</html>

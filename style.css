@@ -1,0 +1,37 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: limegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.section {
+    display: none;
+    text-align: center;
+}
+
+.section.active {
+    display: block;
+}
+
+#monologue-text span {
+    display: inline-block;
+}
+
+.enigme a {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid limegreen;
+    color: limegreen;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.enigme a:hover {
+    background-color: darkgreen;
+}
