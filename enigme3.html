@@ -5,13 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Énigme 3</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Ajustez la hauteur selon vos besoins */
+            background-color: #f0f0f0; /* Couleur de fond du conteneur */
+        }
+        #imageAndText {
+            text-align: center; /* Centrer le texte */
+            border: 2px solid #333; /* Bordure de 2px solide noire */
+            padding: 20px; /* Espacement intérieur */
+            max-width: 80%; /* Largeur maximale du conteneur */
+        }
+        #secretImage {
+            max-width: 100%; /* Image ne dépassant pas la largeur du conteneur */
+            margin-bottom: 10px; /* Espacement sous l'image */
+        }
+    </style>
 </head>
 <body>
-    <div class="section active">
-        <h1>Énigme 2</h1>
-        <p>Avez vous des contacts proches qui aux peut être le code? :</p>
-        <input type="text" id="codeInput">
-        <button id="checkCode">Vérifier le code</button>
+    <div id="container">
+        <div id="imageAndText" style="display:none;">
+            <img id="secretImage" src="image/image.png" alt="Image secrète">
+            <p>Cadeau pas dessus</p>
+        </div>
+        <div class="section active">
+            <h1>Énigme 3</h1>
+            <p>Entrez le code pour débloquer le cadeau :</p>
+            <input type="text" id="codeInput">
+            <button id="checkCode">Vérifier le code</button>
+        </div>
     </div>
     <script src="enigme3.js"></script>
 </body>
