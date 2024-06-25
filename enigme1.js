@@ -3,8 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const answer1 = parseInt(document.getElementById('input1').value);
         const answer2 = parseInt(document.getElementById('input2').value);
         const answer3 = parseInt(document.getElementById('input3').value);
-        const answer4 = parseInt(document.getElementById('input4').value);
-
+        
         if (answer1 === 5 && answer2 === 9 && answer3 === 5) { // Exemple de réponses correctes
             document.getElementById('result').style.display = 'block';
         } else {
